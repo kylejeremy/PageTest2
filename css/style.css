@@ -1,0 +1,655 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #150C01;
+}
+
+h2{
+    font-family: Philosopher;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+
+/*********HEADER**************/
+
+.header {
+    padding-top: 30px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-nav{
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 44px;
+    height: 44px;
+}
+.menu-items {
+    padding-left: 35px;
+}
+.item {
+    padding-right: 45px;
+    color: #150C01;
+    opacity: 0.6;
+}
+.active {
+    color: #DC780B;
+}
+.header-btn {
+    background-color: #DC780B;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 14px 30px;
+}
+
+@media (max-device-width: 780px){
+    .menu-items{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-nav{
+        width: 50%;
+        justify-content: space-between;
+    }
+    .logo{
+        order: 2;
+    }
+}
+
+/*******SECTION ORDER*******/
+.content {
+}
+.order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    background: #FBF1E7;
+    border-radius: 10% 0 0 0;
+}
+.order-details {
+    display: flex;
+    flex-direction: column;
+}
+.order-details h2{
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.order-details p{
+    margin-bottom: 50px;
+    opacity: 0.7;
+}
+.order-btn {
+    display: flex;
+}
+.btn-gold {
+    background-color: #DC780B;
+    color: #fff;
+    width: 158px;
+    height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px 0;
+    margin-right: 30px;
+}
+.btn-white {
+    background-color: #fff;
+    color: #DC780B;
+    width: 158px;
+    height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px 0;
+    border: 1px solid #DC780B;
+}
+.order-img {
+}
+.order-img img{
+    max-width: 100%;
+}
+
+@media (max-device-width: 780px){
+    .order{
+        flex-direction: column;
+    }
+    .order-details{
+        align-items: center;
+    }
+    .order-details h2{
+        text-align: center;
+    }
+    .order-details p{
+        text-align: center;
+
+    }
+}
+
+/*******SECTION FEATURES*******/
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.features h2 {
+    font-family: Philosopher;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32x;
+    color: #150C01;
+    margin-bottom: 44px;
+
+}
+.features h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #DC780B;
+    opacity: 0.7;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 7px;
+
+}
+.fetures-items {
+    display: flex;
+}
+.fetures-items h4{
+    font-family: 'Philosopher';
+    font-weight: 700;
+    font-size: 25px;
+    color: #150C01;
+} 
+.fetures-items p{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #150C01;
+    opacity: 0.7;
+} 
+.fetures-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 40px;
+}
+.icon {
+    background: #DC780B;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon img{
+    width: 44px;
+    height: 44px;
+}
+
+
+@media (max-device-width: 780px){
+    .fetures-items{
+        flex-direction: column;
+    }
+    
+}
+
+
+/*******SECTION ABOUT*******/
+.about {
+    display: flex;
+    align-items: center;
+    background: #FBF1E7;
+    margin-bottom: 100px;
+    border-radius: 10% 0 0 10%;
+}
+.img-about{
+
+}
+.img-about img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5%;
+}
+.about-us {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    margin-left: 20px;
+}
+.about-us h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #DC780B;
+    opacity: 0.7;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 7px;
+}
+.about-us h2{
+    font-family: Philosopher;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32x;
+    color: #150C01;
+    margin-bottom: 30px;
+
+}
+.about-us p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #150C01;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+.about-gold-btn {
+    background-color: #DC780B;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 12px 0;
+    width: 142px;
+    
+}
+
+
+@media (max-device-width: 780px){
+    .about{
+        flex-direction: column;
+    }
+    .about-us h3,h2,p{
+        text-align: center;
+    }
+    .about-us{
+        align-items: center; 
+    }
+}
+
+
+
+
+
+/*****************/
+
+.menu-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.menu-name-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 55px;
+    max-width: 748px;
+}
+
+.menu-name-sec h2{
+    font-family: Philosopher;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32x;
+    color: #150C01;
+    margin: 0 0 25px 0;
+}
+.menu-name-sec h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #DC780B;
+    opacity: 0.7;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+.menu-name-sec p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #150C01;
+    opacity: 0.7;
+    margin: 0;
+}
+
+.menu-items-sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px 20px;
+
+    
+}
+@media (max-device-width: 1232px){
+    .menu-items-sec{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-device-width: 780px){
+    .menu-items-sec{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.menu-colum{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 75px 10px 10px 10px;  
+}
+.menu-img img {
+    border-radius: 75px 10px 0 0;
+}
+.menu-titel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.menu-titel h2{
+    font-family: Philosopher;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #150C01;
+}
+.menu-titel p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #150C01;
+    opacity: 0.7;
+}
+.menu-add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 20px 20px;
+}
+.menu-btn{
+    width: 36px;
+    height: 36px;
+    background-color: #DC780B;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20%;
+    border: none;
+}
+.menu-stars {
+}
+.menu-footer {
+    padding: 60px 12px;
+}
+
+.menu-footer a{
+    color: #DC780B;
+    font-size: 16px;
+}
+
+
+
+
+
+/*******************/
+
+
+.app{
+    background-color: #FBF1E7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10% 0 0 10%;
+    margin-bottom: 100px;
+}
+
+@media (max-device-width: 870px){
+    .app{
+        flex-direction: column;
+        
+    }
+    .app img{
+        margin: 45px 0 45px 0px;
+    }
+    .app-colum{
+        margin: 0 0 45px 0;
+        align-items: center;
+
+    }
+    .app-btns{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .apple-btn{
+        margin-bottom: 10px;
+        width: 200px;
+    }
+    .google-btn{
+        width: 200px;
+    }
+}
+
+.app img{
+    border-radius: 12%;
+    
+    
+}
+.app-colum {
+    display: flex;
+    flex-direction: column;
+    background-color: #FBF1E7;
+    max-width: 50%;
+    margin-left: 100px;
+    
+}
+.app-colum h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #DC780B;
+    margin: 0 0 5px 0;
+}
+.app-colum h2{
+    font-family: Philosopher;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #150C01;
+    margin: 0 0 30px 0;
+}
+.app-colum p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #150C01;
+    opacity: 0.7;
+    margin: 0 0 40px 0;
+}
+.app-btns {
+    display: flex;
+    align-items: center;
+
+}
+.apple-btn {
+    margin-right: 30px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    
+}
+.apple-btn img{
+    width: 20px;
+    height: 20px;
+
+}
+.google-btn {
+    background-color:#FBF1E7;
+    color: #000;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: 1.5px solid #150C01;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+
+}
+.google-btn span{
+    margin-left: 10px;
+    display: block;
+}
+.google-btn img{
+    width: 20px;
+    height: 20px;
+    
+}
+.apple-btn span{
+    margin-left: 10px;
+    display: block;
+}
+
+
+
+
+
+/******************/
+
+.contact {
+    background-color: #FBF1E7;
+    padding: 120px 0;
+    border-radius: 10% 0 0 0;
+}
+.contact-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-items h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #DC780B;
+    margin: 0 0 15px 0;
+}
+.contact-items h2{
+    font-family: Philosopher;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #150C01;
+    margin: 0 0 45px 0;
+    text-align: center;
+}
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.message input{
+    
+    max-width: 750px;
+    
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 20px;
+
+}
+.message input::placeholder{
+    text-align: center;
+    opacity: 0.5;
+}
+.send-btn {
+    width: 176px;
+    height: 55px;
+    background-color: #DC780B;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+
+
+footer{
+    min-height: 490px;
+    background: #252525;
+    color:#fff;
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 120px;
+}
+
+footer .logo{
+    
+}
+footer a{
+    color:#fff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+
+}
+
+footer h4{
+    margin-bottom: 25px;
+}
+.colums-wrap {
+    display: flex;
+    justify-content: space-around;
+}
+.colums {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+.socials a {
+    margin-right: 5px;
+    
+}
+
+@media (max-device-width: 780px){
+    .colums-wrap{
+        flex-wrap: wrap;
+    }
+
+}
