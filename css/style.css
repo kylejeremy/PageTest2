@@ -28,11 +28,17 @@ a{
 
 .header {
     padding-top: 30px;
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+    z-index: 1;
 }
 .menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 10px;
+    
 }
 .menu-nav{
     display: flex;
@@ -116,14 +122,14 @@ a{
     }
     .navbar{
         height: 100vh;
-        position: fixed;
+        position: absolute;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding-top: 20px;
         background-color: rgba(0, 0, 0, 0.9);
         z-index: 1;
-        left: -100%;
+        left: -110%;
         opacity: 1;
         font-size: 25px;
         width: 100%;
@@ -148,7 +154,7 @@ a{
         padding: 20px 0;
         width: 150px;
         border-radius: 0 0 20px 20px;
-        right: 50px;     
+        right: 30px;     
     }
 }
 
