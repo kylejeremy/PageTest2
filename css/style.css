@@ -79,13 +79,37 @@ a{
 .navbar{
     display: flex;
     align-items: center;
-   
 }
     
 #check, .checkbtn{
     display: none;
 }
 
+.menu-nav nav ul li ul{
+    position: absolute;
+    display: none;
+    color: #fff;
+    background-color: #fff;
+    padding: 20px 0;
+    width: 150px;
+    border-radius: 0 0 20px 20px;
+       
+}
+.menu-nav nav ul li:hover ul{
+    display: block;
+}
+.menu-nav nav ul li ul li{
+    padding: 10px;
+   
+}
+.menu-nav nav ul li ul li a{
+    color: #150C01;
+    padding: 10px 10px;
+}
+.menu-nav nav ul li ul li:hover a{
+    background-color: #DC780B;
+    border-radius: 10px;
+}
 @media (max-width:817px){
     .checkbtn{
         display: block;
@@ -117,6 +141,15 @@ a{
     #check:checked ~ .navbar{
         left: 0;
     }
+    .menu-nav nav ul li ul{
+        position: absolute;
+        display: none;
+        background-color: #fff;
+        padding: 20px 0;
+        width: 150px;
+        border-radius: 0 0 20px 20px;
+        right: 50px;     
+    }
 }
 
 .navbar li{
@@ -141,6 +174,7 @@ a{
     border-radius: 5px;
     padding: 14px 30px;
 }
+
 
 @media (max-device-width: 817px){
     .menu-items{
