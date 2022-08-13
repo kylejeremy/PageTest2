@@ -43,12 +43,93 @@ a{
     height: 44px;
 }
 .menu-items {
+    display: flex;
     padding-left: 35px;
+}
+
+.checkbtn{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+   
+.checkbtn > span,
+.checkbtn > span::before,
+.checkbtn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+.checkbtn > span::before {
+    content: '';
+    top: -8px;
+}
+.checkbtn > span::after {
+    content: '';
+    top: 8px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+   
+}
+    
+#check, .checkbtn{
+    display: none;
+}
+
+@media (max-width:817px){
+    .checkbtn{
+        display: block;
+    }
+    .navbar{
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 20px;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1;
+        left: -100%;
+        opacity: 1;
+        font-size: 25px;
+        width: 100%;
+        height: 100vh;
+        transition: 0.6s ease;
+        border-radius: 0 20px 0 0;
+    }
+    .navbar li{
+        padding-bottom: 10px;
+    }
+    .navbar .item{
+        color: #DC780B;
+
+    }
+    #check:checked ~ .navbar{
+        left: 0;
+    }
+}
+
+.navbar li{
+    list-style: none;
 }
 .item {
     padding-right: 45px;
     color: #150C01;
     opacity: 0.6;
+}
+
+.item:hover{
+    text-decoration: underline;
 }
 .active {
     color: #DC780B;
@@ -61,7 +142,7 @@ a{
     padding: 14px 30px;
 }
 
-@media (max-device-width: 780px){
+@media (max-device-width: 817px){
     .menu-items{
         display: flex;
         flex-direction: column;
@@ -76,8 +157,7 @@ a{
 }
 
 /*******SECTION ORDER*******/
-.content {
-}
+
 .order {
     display: flex;
     align-items: center;
@@ -121,8 +201,7 @@ a{
     padding: 20px 0;
     border: 1px solid #DC780B;
 }
-.order-img {
-}
+
 .order-img img{
     max-width: 100%;
 }
@@ -228,9 +307,7 @@ a{
     margin-bottom: 100px;
     border-radius: 10% 0 0 10%;
 }
-.img-about{
 
-}
 .img-about img{
     max-width: 100%;
     max-height: 100%;
@@ -402,8 +479,7 @@ a{
     border-radius: 20%;
     border: none;
 }
-.menu-stars {
-}
+
 .menu-footer {
     padding: 60px 12px;
 }
@@ -616,9 +692,7 @@ footer{
     padding: 120px;
 }
 
-footer .logo{
-    
-}
+
 footer a{
     color:#fff;
     font-family: 'Roboto';
